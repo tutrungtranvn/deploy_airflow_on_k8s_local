@@ -12,7 +12,7 @@ nodes:
     extraMounts:
       - hostPath: ./data
         containerPath: /tmp/data
-      - hostPath: /Users/trungtran/Documents/Personal/Project/airflow-local/dags
+      - hostPath: /Users/trungtran/Documents/Personal/Project/deploy_airflow_on_k8s_local/dags
         containerPath: /tmp/dags
   - role: worker
     kubeadmConfigPatches:
@@ -24,7 +24,7 @@ nodes:
     extraMounts:
       - hostPath: ./data
         containerPath: /tmp/data
-      - hostPath: /Users/trungtran/Documents/Personal/Project/airflow-local/dags
+      - hostPath: /Users/trungtran/Documents/Personal/Project/deploy_airflow_on_k8s_local/dags
         containerPath: /tmp/dags
   - role: worker
     kubeadmConfigPatches:
@@ -36,5 +36,5 @@ nodes:
     extraMounts:
       - hostPath: ./data
         containerPath: /tmp/data
-      - hostPath: /Users/trungtran/Documents/Personal/Project/airflow-local/dags
+      - hostPath: /Users/trungtran/Documents/Personal/Project/deploy_airflow_on_k8s_local/dags
         containerPath: /tmp/dags
